@@ -1,7 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  console.log(
+    `Hello World${
+      process.env.NODE_ENV === "development" ? " (Development Mode)" : ""
+    }`
+  );
+
   return (
     <div className="App">
       <header className="App-header">
