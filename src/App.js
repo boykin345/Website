@@ -1,30 +1,36 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import About from "./pages/About";
 
-function App() {
-  console.log(
-    `Hello World${
-      process.env.NODE_ENV === "development" ? " (Development Mode)" : ""
-    }`
-  );
+function Start() {
+  const navigate = useNavigate();
+
+  const aboutPage = () => {
+    navigate("/about");
+  };
 
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p className="App-label">My Personal React Site.</p>
+        <button className="Main-button" onClick={aboutPage}>
+          About Me.
+        </button>
       </header>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Start />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
