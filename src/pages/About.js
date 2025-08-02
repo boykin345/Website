@@ -1,33 +1,36 @@
-import { AnimatedSection } from "../components/AnimatedSection";
 import "../App.css";
-import PersonalInfoTab from "../components/PersonalInfoTab";
-import { Helmet } from "react-helmet";
-import ProjectsTab from "../components/ProjectsTab";
+import Navbar from "../components/Navbar";
 
-export default function About() {
+function About() {
   return (
     <>
-      <Helmet>
-        <title>About Me</title>
-      </Helmet>
+      <title>About</title>
 
-      <AnimatedSection>
-        <div className="aboutsection">
-          <PersonalInfoTab />
-        </div>
-      </AnimatedSection>
+      <div className="navbar-container">
+        <Navbar />
+      </div>
 
-      <AnimatedSection>
+      <section className="about-container">
+        <h1>Mikhail Y. Kolyakin</h1>
+        <h2>About</h2>
         <div>
-          <ProjectsTab />
+          <p>
+            A just starting React web developer in 2025. This is the sandbox
+            place where I explore different frameworks and technologies and
+            share experiences and maybe will start a blog page here later.
+          </p>
         </div>
-      </AnimatedSection>
-
-      <AnimatedSection>
+        <h2>Background</h2>
         <div>
-          <h2>12345</h2>
+          <ul>
+            <li>Passionate about web development and design.</li>
+            <li>Currently learning React and modern web technologies.</li>
+            <li></li>
+          </ul>
         </div>
-      </AnimatedSection>
+      </section>
     </>
   );
 }
+
+export default About;

@@ -1,7 +1,9 @@
-import logo from "./logo.svg";
+import logo from "./assets/logo.svg";
 import "./App.css";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Fancy from "./pages/Fancy";
 
 function Start() {
   const navigate = useNavigate();
@@ -28,6 +30,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Start />} />
+        <Route path="/fancy" element={<Fancy />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
