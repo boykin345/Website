@@ -16,7 +16,11 @@ function About() {
           <p className="about-text">
             A just starting React web developer in 2025 in fintech. Maybe will
             start a blog page here later. Can talk a lot about game development
-            of grand strategy games. Read a lot about
+            of grand strategy games. Read a lot about urbanistics and
+            architecture.
+            <ul>
+              <li>Have a 🐱</li>
+            </ul>
           </p>
         </div>
       </section>

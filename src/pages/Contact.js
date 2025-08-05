@@ -19,7 +19,14 @@ function Contact() {
           Feel free to click on the icons to visit my profiles on various
           platforms. If you want to reach me by email:
         </p>
-        <h2>M.Koliakin@me.com</h2>
+        <h2>
+          <a
+            href="mailto:M.Koliakin@me.com"
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            M.Koliakin@me.com
+          </a>
+        </h2>
       </div>
       <div className="projects-container">
         <a

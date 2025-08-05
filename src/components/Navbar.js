@@ -16,6 +16,9 @@ export default function Navbar() {
         <li className={currentPath === "/Contact" ? "active" : ""}>
           <a href="/Contact">Contact</a>
         </li>
+        <li className={currentPath === "/MyMacConfig" ? "active" : ""}>
+          <a href="/MyMacConfig">My Mac Config</a>
+        </li>
         <li>
           <h1>Blog (WIP)</h1>
         </li>
