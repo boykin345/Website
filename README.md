@@ -1,3 +1,3 @@
 # Personal not really portofolio Website
 
-just open and expore it:)
+## just open the website and explore it :)

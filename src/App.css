@@ -228,6 +228,13 @@ h1, h2, h3 {
   animation: fadeInUp 1s ease-out forwards;
 }
 
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between text and icon */
+  justify-content: center; /* center if you want */
+}
+
 @font-face {
   font-family: Pixelscapes;
   src: url("./assets/fonts/Pixelscapes.ttf");
@@ -259,7 +266,15 @@ section {
   display: grid;
   place-items: center;
   align-content: center;
-  min-height: 60vh;
+  min-height: 65vh;
+}
+
+.github-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  image-rendering: pixelated; /* keeps pixel theme */
 }
 
 .hidden {
