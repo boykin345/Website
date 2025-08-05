@@ -5,6 +5,8 @@ import SoundCloud from "../assets/SoundCloud.png";
 import Spotify from "../assets/Spotify.png";
 import Steam from "../assets/Steam.png";
 import GitHub from "../assets/github.svg";
+import Twitter from "../assets/Twitter.png";
+import Reddit from "../assets/Reddit.png";
 
 function Contact() {
   return (
@@ -68,6 +70,22 @@ function Contact() {
           title="GitHub"
         >
           <img src={GitHub} alt="GitHub" className="icon spin-ccw" />
+        </a>
+        <a
+          href="https://x.com/BoyKin345"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Twitter"
+        >
+          <img src={Twitter} alt="Twitter" className="icon spin-cw" />
+        </a>
+        <a
+          href="https://www.reddit.com/user/Substantial-Purple60/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Reddit"
+        >
+          <img src={Reddit} alt="Reddit" className="icon spin-ccw" />
         </a>
       </div>
     </>

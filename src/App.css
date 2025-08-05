@@ -17,6 +17,36 @@ h1, h2, h3 {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    display: none;
+    padding: 10px 0;
+  }
+  
+  .nav-links.open {
+    display: flex;
+  }
+  
+  .nav-toggle {
+    display: block;
+  }
+  
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .about {
+    display: none;
+  }
+}
+
 .left-spin {
   left: 20px;
 }
@@ -103,6 +133,8 @@ h1, h2, h3 {
 
 .nav li.active {
   border-bottom: 2px solid #F5D9A6;
+    background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
 
 
@@ -152,7 +184,7 @@ h1, h2, h3 {
   font-family: Pixelscapes;
   color: #F5D9A6;
   border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
   border: 10px solid rgba(255, 255, 255, 0.1);
   animation: fadeInUp 1s ease-out forwards;
 }
@@ -166,7 +198,7 @@ h1, h2, h3 {
   font-family: Pixelscapes;
   color: #F5D9A6;
   border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
   border: 10px solid rgba(255, 255, 255, 0.1);
   animation: fadeInUp 1s ease-out forwards;
   display: flex;
@@ -184,7 +216,7 @@ h1, h2, h3 {
   font-family: Pixelscapes;
   color: #F5D9A6;
   border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
   border: 10px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -196,6 +228,8 @@ h1, h2, h3 {
 
 .about-text {
   max-width: 50vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
 
 .navbar-container {
@@ -207,7 +241,7 @@ h1, h2, h3 {
   font-family: Pixelscapes;
   color: #F5D9A6;
   border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
   border: 10px solid rgba(255, 255, 255, 0.1);
   animation: fadeInUp 1s ease-out forwards;
 }
@@ -295,7 +329,7 @@ section {
   display: grid;
   place-items: center;
   align-content: center;
-  min-height: 65vh;
+  min-height: 63vh;
 }
 
 .github-icon {

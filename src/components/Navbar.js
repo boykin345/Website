@@ -10,9 +10,6 @@ export default function Navbar() {
         About
       </a>
       <ul>
-        <li className={currentPath === "/Fancy" ? "active" : ""}>
-          <a href="/Fancy">Projects</a>
-        </li>
         <li className={currentPath === "/Contact" ? "active" : ""}>
           <a href="/Contact">Contact</a>
         </li>

@@ -11,50 +11,56 @@ function MyMacConfig() {
       </div>
 
       <section className="about-container">
-        <h3>To use config, firstly install HomeBrew</h3>
-        <p>then run the following command in your zsh terminal:</p>
+        <h3 className="about-text">To use config, firstly install HomeBrew</h3>
+        <p className="about-text">
+          then run the following command in your zsh terminal:
+        </p>
         <div className="code-container">
           <pre className="code-block">
             <code>{`
 brew update
 
-echo "Installing CLI tools"
 brew install \
-  apr \
-  apr-util \
-  asciinema \
-  brotli \
-  c-ares \
-  ca-certificates \
-  gettext \
-  icu4c@77 \
-  liblinear \
-  libnghttp2 \
-  libssh2 \
-  libunistring \
-  libuv \
-  lua \
-  lz4 \
-  mpdecimal \
-  nmap \
-  node \
-  nvm \
-  openssl@3 \
-  pcre2 \
-  python@3.13 \
-  readline \
-  sqlite \
-  subversion \
-  utf8proc \
-  xz
 
-echo "Installing GUI apps"
+\n  apr \
+\n  apr-util \
+\n   asciinema \
+\n   brotli \
+\n   c-ares \
+\n   ca-certificates \
+\n   gettext \
+\n   icu4c@77 \
+\n   liblinear \
+\n   libnghttp2 \
+\n   libssh2 \
+\n   libunistring \
+\n   libuv \
+\n   lua \
+\n   lz4 \
+\n   mpdecimal \
+\n   nmap \
+\n   node \
+\n   nvm \
+\n   openssl@3 \
+\n   pcre2 \
+\n   python@3.13 \
+\n   readline \
+\n   sqlite \
+\n   subversion \
+\n   utf8proc \
+\n   xz
+
 brew install --cask \
-  audacity \
-  betterdisplay \
-  linearmouse
 
-echo "✅ All done!"
+\n  audacity \
+\n  betterdisplay \
+\n  linearmouse \
+\n  alt-tab \
+\n  raycast \
+\n  adguard \
+\n  docker \
+
+echo "All done!"
 `}</code>
           </pre>
         </div>

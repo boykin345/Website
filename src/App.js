@@ -3,7 +3,6 @@ import "./App.css";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Fancy from "./pages/Projects";
 import MyMacConfig from "./pages/MyMacConfig";
 
 function Start() {
@@ -31,7 +30,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Start />} />
-        <Route path="/fancy" element={<Fancy />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/mymacconfig" element={<MyMacConfig />} />

@@ -30,7 +30,7 @@ export default function Projects() {
                 />
               </a>
             </div>
-            <p>
+            <p className="about-text">
               Solving random maze using several state-of-the-art maze-solving
               approaches: Graph, Non-Graph and Metaheuristic algorithms
             </p>
@@ -53,7 +53,9 @@ export default function Projects() {
                 />
               </a>
             </div>
-            <p>Description of my other awesome project.</p>
+            <p className="about-text">
+              Description of my other awesome project.
+            </p>
           </div>
         </AnimatedSection>
       </div>
@@ -74,7 +76,7 @@ export default function Projects() {
               />
             </a>
           </div>
-          <p>Description of my other awesome project.</p>
+          <p className="about-text">Description of my other awesome project.</p>
         </AnimatedSection>
 
         <AnimatedSection className="project">
@@ -92,7 +94,7 @@ export default function Projects() {
               />
             </a>
           </div>
-          <p>Description of my other awesome project.</p>
+          <p className="about-text">Description of my other awesome project.</p>
         </AnimatedSection>
       </div>
     </>
