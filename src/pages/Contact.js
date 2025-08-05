@@ -4,6 +4,7 @@ import LinkedIn from "../assets/LinkedIn.png";
 import SoundCloud from "../assets/SoundCloud.png";
 import Spotify from "../assets/Spotify.png";
 import Steam from "../assets/Steam.png";
+import GitHub from "../assets/github.svg";
 
 function Contact() {
   return (
@@ -12,48 +13,55 @@ function Contact() {
       <div className="navbar-container">
         <Navbar />
       </div>
-
-      <img
-        src={LinkedIn}
-        alt="LinkedIn"
-        className="spin-image bottom-left spin-cw"
-      />
-      <a
-        href="https://soundcloud.com/user-735227306"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="SoundCloud"
-      >
-        <img
-          src={SoundCloud}
-          alt="SoundCloud"
-          className="spin-image top-left spin-ccw"
-        />
-      </a>
-      <img
-        src={Spotify}
-        alt="Spotify"
-        className="spin-image top-right spin-cw"
-      />
-      <a
-        href="https://steamcommunity.com/id/juzzyboykin"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="Steam"
-      >
-        <img
-          src={Steam}
-          alt="Steam"
-          className="spin-image bottom-right spin-ccw"
-        />
-      </a>
-
       <div className="about-container">
         <h1>Contact Page</h1>
         <p>
           Feel free to click on the icons to visit my profiles on various
           platforms. If you want to reach me by email:
         </p>
+        <h2>M.Koliakin@me.com</h2>
+      </div>
+      <div className="projects-container">
+        <a
+          href="https://soundcloud.com/user-735227306"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="SoundCloud"
+        >
+          <img src={SoundCloud} alt="SoundCloud" className="icon spin-ccw" />
+        </a>
+        <a
+          href="https://open.spotify.com/user/31lpevsqaz6ftqu23sk2vddr3pdq?si=e4b3c22b1a0147e7"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Spotify"
+        >
+          <img src={Spotify} alt="Spotify" className="icon spin-cw" />
+        </a>
+        <a
+          href="https://steamcommunity.com/id/juzzyboykin"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Steam"
+        >
+          <img src={Steam} alt="Steam" className="icon spin-ccw" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/mikhail-kolyakin-946734259/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="LinkedIn"
+        >
+          <img src={LinkedIn} alt="LinkedIn" className="icon spin-cw" />
+        </a>
+        <a
+          href="https://github.com/boykin345"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="GitHub"
+        >
+          <img src={GitHub} alt="GitHub" className="icon spin-ccw" />
+        </a>
       </div>
     </>
   );

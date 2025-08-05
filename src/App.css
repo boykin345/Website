@@ -50,27 +50,16 @@ h1, h2, h3 {
   animation: spinCounterClockwise 6s linear infinite;
 }
 
-.bottom-left {
-  bottom: 10%;
-  left: 20px;
-  transform: translateY(0);
+.icon {
+  width: 64px;
+  height: 64px;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  image-rendering: pixelated;
 }
 
-.top-left {
-  top: 10%;
-  left: 20px;
-}
 
-.bottom-right {
-  bottom: 10%;
-  right: 20px;
-  transform: translateY(0);
-}
-
-.top-right {
-  top: 10%;
-  right: 20px;
-}
 
 @keyframes spinClockwise {
   0% {
@@ -168,6 +157,47 @@ h1, h2, h3 {
   animation: fadeInUp 1s ease-out forwards;
 }
 
+.projects-container {
+  max-width: 75vw;
+  margin: 40px auto;  
+  padding: 20px 30px;
+  background-color: rgba(206, 184, 119, 0.1);
+  text-align: center;
+  font-family: Pixelscapes;
+  color: #F5D9A6;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  animation: fadeInUp 1s ease-out forwards;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.project {
+  max-width: 75vw;
+  margin: 40px auto;  
+  padding: 20px 30px;
+  background-color: rgba(206, 184, 119, 0.1);
+  text-align: center;
+  font-family: Pixelscapes;
+  color: #F5D9A6;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border: 10px solid rgba(255, 255, 255, 0.1);
+}
+
+.project h2 {
+  font-family: Pixelscapes;
+  color: #F5D9A6;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.about-text {
+  max-width: 50vw;
+}
+
 .navbar-container {
   max-width: 75vw;
   margin: 40px auto;  
@@ -229,7 +259,7 @@ section {
   display: grid;
   place-items: center;
   align-content: center;
-  min-height: 100vh;
+  min-height: 60vh;
 }
 
 .hidden {

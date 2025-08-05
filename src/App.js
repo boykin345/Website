@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Fancy from "./pages/Fancy";
+import Fancy from "./pages/Projects";
 
 function Start() {
   const navigate = useNavigate();

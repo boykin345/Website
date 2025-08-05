@@ -11,7 +11,7 @@ export default function Navbar() {
       </a>
       <ul>
         <li className={currentPath === "/Fancy" ? "active" : ""}>
-          <a href="/Fancy">FancyPage</a>
+          <a href="/Fancy">Projects</a>
         </li>
         <li className={currentPath === "/Contact" ? "active" : ""}>
           <a href="/Contact">Contact</a>
