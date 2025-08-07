@@ -137,6 +137,18 @@ h1, h2, h3 {
   border-radius: 5px;
 }
 
+.nav a.active {
+  border-bottom: 2px solid #F5D9A6;
+    background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+.nav a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
 
 .nav h1 {
   font-size: 1.0rem;
@@ -183,7 +195,7 @@ h1, h2, h3 {
   text-align: center;
   font-family: Pixelscapes;
   color: #F5D9A6;
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
   border: 10px solid rgba(255, 255, 255, 0.1);
   animation: fadeInUp 1s ease-out forwards;
@@ -229,7 +241,15 @@ h1, h2, h3 {
 .about-text {
   max-width: 50vw;
   background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  border-radius: 10px;
+}
+
+.About {
+  font-size: 2rem;
+  color: #F5D9A6;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .navbar-container {
