@@ -26,12 +26,12 @@ function About() {
               alt="Logo"
               style={{ width: "30px", height: "30px", verticalAlign: "middle" }}
             />{" "}
-            React web developer in 2025 in fintech. Maybe will start a blog page
-            here later. Can talk a lot about game development, especially of
-            grand strategy games. Interested in urbanistics and architecture.
+            React web developer in 2025 working in fintech. Interested in game
+            development, especially of grand strategy games, as well as
+            urbanistics and architecture.
             <ul>
               <li>
-                Having a <a href={Coshka}>🐈</a>
+                Also, a <a href={Coshka}>🐈</a> lives with me.
               </li>
             </ul>
           </p>
