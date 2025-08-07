@@ -1,27 +1,43 @@
-import logo from "./assets/logo.svg";
 import "./App.css";
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
-import About from "./pages/About";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact";
 import MyMacConfig from "./pages/MyMacConfig";
+import Coshka from "./assets/coshka.jpeg";
+import Logo from "./assets/logo.svg";
 
-function Start() {
-  const navigate = useNavigate();
+import Navbar from "./components/Navbar";
 
-  const aboutPage = () => {
-    navigate("/about");
-  };
-
+function About() {
   return (
-    <div>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="App-label">My Personal React Site.</p>
-        <button className="Main-button" onClick={aboutPage}>
-          About Me.
-        </button>
-      </header>
-    </div>
+    <>
+      <title>About</title>
+
+      <div className="navbar-container">
+        <Navbar />
+      </div>
+
+      <section className="about-container">
+        <h1 className="about-text">Mikhail Y. Kolyakin</h1>
+        <div>
+          <p className="about-text">
+            A just starting{" "}
+            <img
+              src={Logo}
+              alt="Logo"
+              style={{ width: "30px", height: "30px", verticalAlign: "middle" }}
+            />{" "}
+            React web developer in 2025 in fintech. Maybe will start a blog page
+            here later. Can talk a lot about game development, especially of
+            grand strategy games. Interested in urbanistics and architecture.
+            <ul>
+              <li>
+                Having a <a href={Coshka}>🐈</a>
+              </li>
+            </ul>
+          </p>
+        </div>
+      </section>
+    </>
   );
 }
 
@@ -29,9 +45,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Start />} />
+        <Route path="/" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
         <Route path="/mymacconfig" element={<MyMacConfig />} />
       </Routes>
     </BrowserRouter>

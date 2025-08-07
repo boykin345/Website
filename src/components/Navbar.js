@@ -6,10 +6,7 @@ export default function Navbar() {
 
   return (
     <nav className="nav">
-      <a
-        href="/About"
-        className={currentPath === "/About" ? "active" : "About"}
-      >
+      <a href="/" className={currentPath === "/" ? "active" : "About"}>
         About
       </a>
       <ul>
