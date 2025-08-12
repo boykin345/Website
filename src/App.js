@@ -1,9 +1,11 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact";
-import MyMacConfig from "./pages/MyMacConfig";
+import MyMacConfig from "./pages/blog-pages/MyMacConfig";
 import Coshka from "./assets/coshka.jpeg";
 import Logo from "./assets/logo.svg";
+import Blog from "./pages/Blog";
+import Star from "./assets/Star.png";
 
 import Navbar from "./components/Navbar";
 
@@ -17,16 +19,17 @@ function About() {
       </div>
 
       <section className="about-container">
+        <img src={Star} alt="main-photo-page" className="main-photo" />
         <h1 className="about-text">Mikhail Y. Kolyakin</h1>
         <div>
           <p className="about-text">
-            A just starting{" "}
+            {" "}
             <img
               src={Logo}
               alt="Logo"
               style={{ width: "30px", height: "30px", verticalAlign: "middle" }}
             />{" "}
-            React web developer in 2025 working in fintech. Interested in game
+            Junior React web developer working in fintech. Interested in game
             development, especially of grand strategy games, as well as
             urbanistics and architecture.
             <ul>
@@ -48,6 +51,8 @@ function App() {
         <Route path="/" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/mymacconfig" element={<MyMacConfig />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/post/:postId" element={<Blog />} />
       </Routes>
     </BrowserRouter>
   );

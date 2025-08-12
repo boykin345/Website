@@ -1,5 +1,5 @@
-import "../App.css";
-import Navbar from "../components/Navbar";
+import "../../App.css";
+import Navbar from "../../components/Navbar";
 
 function MyMacConfig() {
   return (
@@ -10,11 +10,8 @@ function MyMacConfig() {
         <Navbar />
       </div>
 
-      <section className="about-container">
-        <h3 className="about-text">To use config, firstly install HomeBrew</h3>
-        <p className="about-text">
-          then run the following command in your zsh terminal:
-        </p>
+      <section className="blog-container">
+        <h1 className="blog-text">My Mac Config</h1>
         <div className="code-container">
           <pre className="code-block">
             <code>{`

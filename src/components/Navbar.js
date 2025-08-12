@@ -7,17 +7,14 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <a href="/" className={currentPath === "/" ? "active" : "About"}>
-        About
+        /About
       </a>
       <ul>
+        <li className={currentPath === "/Blog" ? "active" : ""}>
+          <a href="/Blog">/Blog</a>
+        </li>
         <li className={currentPath === "/Contact" ? "active" : ""}>
-          <a href="/Contact">Contact</a>
-        </li>
-        <li className={currentPath === "/MyMacConfig" ? "active" : ""}>
-          <a href="/MyMacConfig">My Mac Config</a>
-        </li>
-        <li>
-          <h1>Blog (WIP)</h1>
+          <a href="/Contact">/Contact</a>
         </li>
       </ul>
     </nav>

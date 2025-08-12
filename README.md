@@ -1,3 +1,3 @@
-# Personal not really portofolio Website
+# Personal Website
 
-just open the website and explore it :)
+just open [[text](https://mikhailkolyakin.com)]
