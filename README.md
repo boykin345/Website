@@ -1,3 +1,3 @@
 # Personal Website
 
-just open [[text](https://mikhailkolyakin.com)]
+just open [[Website](https://mikhailkolyakin.com)]
