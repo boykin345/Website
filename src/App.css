@@ -5,8 +5,8 @@ body {
     font-family: 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: url('AboutWallpaper.jpg');
-      background-size: 40vh 40vw;
+    background-image: url('assets/AboutWallpaper.jpg');
+      background-size: 20vh 20vw;
 }
 
 h1, h2, h3 {
