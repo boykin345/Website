@@ -1,0 +1,421 @@
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+
+$primary-color: #f5d9a6;
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("assets/AboutWallpaper.jpg");
+  background-size: 20vh 20vw;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Pixelscapes, sans-serif;
+}
+
+.App {
+  text-align: center;
+  overflow: hidden;
+}
+
+.spin-cw {
+  animation: spinClockwise 6s linear infinite;
+}
+
+.spin-ccw {
+  animation: spinCounterClockwise 6s linear infinite;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  image-rendering: pixelated;
+}
+
+@keyframes spinClockwise {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spinCounterClockwise {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+@media (prefers-reduced-motion) {
+  .hidden { transition: none; }
+}
+
+/* ---------------- NAV ---------------- */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 1rem 2rem;
+  color: $primary-color;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: Pixelscapes;
+  font-size: 1.2rem;
+
+  .logo {
+    font-family: Pixelscapes;
+    font-weight: bold;
+    font-size: 2rem; // bigger About link
+    color: $primary-color;
+    text-decoration: none;
+
+    &:visited {
+      color: $primary-color; // prevent violet
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      color: #ffea63;
+    }
+
+    &.active {
+      border-bottom: 2px solid $primary-color;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+
+        &:visited {
+          color: $primary-color; // prevent violet
+        }
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.3);
+          border-radius: 5px;
+          color: #ffea63;
+        }
+
+        &.active {
+          border-bottom: 2px solid $primary-color;
+          background-color: rgba(0, 0, 0, 0.3);
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+
+/* ---------------- ABOUT ---------------- */
+.about {
+  font-size: 2rem;
+}
+
+.about-container {
+  max-width: 75vw;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: rgba(206, 184, 119, 0.1);
+  text-align: center;
+  font-family: Pixelscapes;
+  color: $primary-color;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  animation: fadeInUp 1s ease-out forwards;
+
+  h1, h2, h3 {
+    font-family: Pixelscapes;
+    color: $primary-color;
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  h1 { font-size: 2.5rem; margin-bottom: 20px; }
+  h2 { font-size: 1.8rem; margin-bottom: 15px; }
+  h3 { font-size: 1.5rem; margin-bottom: 10px; }
+}
+
+.about-text {
+  max-width: 50vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.About {
+  font-size: 2rem;
+  color: $primary-color;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.aboutsection p {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ---------------- BLOG ---------------- */
+.blog-container {
+  max-width: 75vw;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: rgba(206, 184, 119, 0.1);
+  text-align: center;
+  font-family: Pixelscapes;
+  color: $primary-color;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  animation: fadeInUp 1s ease-out forwards;
+  flex-direction: column;
+  display: flex;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: Pixelscapes;
+    color: $primary-color;
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  .post-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .post-date {
+    font-size: 1.4rem;
+    color: $primary-color;
+    display: inline-block;
+    flex: 1;
+    width: 20rem;
+    text-align: right;
+    margin-right: 3rem;
+  }
+
+  .post-info {
+    text-align: right;
+    flex: 1;
+  }
+
+  .post-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: $primary-color;
+    font-size: 1.4rem;
+    text-align: left;
+
+    &:hover { text-decoration: underline; }
+  }
+
+  .post-author {
+    display: block;
+    font-size: 0.8rem;
+    color: $primary-color;
+  }
+}
+
+.main-photo {
+  width: 340px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* ---------------- PROJECTS ---------------- */
+.projects-container,
+.project,
+.navbar-container {
+  max-width: 75vw;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: rgba(206, 184, 119, 0.1);
+  text-align: center;
+  font-family: Pixelscapes;
+  color: $primary-color;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.projects-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.project {
+  h2 {
+    font-family: Pixelscapes;
+    color: $primary-color;
+    animation: fadeInUp 1s ease-out forwards;
+  }
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+/* ---------------- CODE BLOCK ---------------- */
+.code-block {
+  background: #222;
+  color: #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 12px;
+  border: 2px solid #555;
+  box-shadow: 0 0 0 4px #000 inset;
+  font-family: "Press Start 2P", monospace;
+  image-rendering: pixelated;
+}
+
+.code-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* ---------------- ICONS ---------------- */
+.github-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  image-rendering: pixelated;
+}
+
+/* ---------------- FONTS ---------------- */
+@font-face {
+  font-family: Pixelscapes;
+  src: url("./assets/fonts/Pixelscapes.ttf");
+}
+
+/* ---------------- LAYOUT ---------------- */
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 63vh;
+}
+
+/* ---------------- ANIMATIONS ---------------- */
+@keyframes slideUpFromFloor {
+  from { transform: translateY(300px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+@keyframes appear {
+  from { opacity: 0; scale: 0.5; }
+  to { opacity: 1; scale: 1; }
+}
+
+@keyframes spin {
+  0% { transform: translateY(-50%) rotate(0deg); }
+  100% { transform: translateY(-50%) rotate(360deg); }
+}
+
+.block {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+/* ---------------- MEDIA QUERIES ---------------- */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.8rem;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-align: center;
+      width: 100%;
+      max-width: 300px;
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+
+      a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 6px;
+
+        &.active {
+          font-weight: bold;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+
+    > a {
+      order: -1;
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

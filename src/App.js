@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact";
 import MyMacConfig from "./pages/blog-pages/MyMacConfig";
@@ -6,7 +6,6 @@ import Coshka from "./assets/coshka.jpeg";
 import Logo from "./assets/logo.svg";
 import Blog from "./pages/Blog";
 import Star from "./assets/Star.png";
-
 import Navbar from "./components/Navbar";
 
 function About() {

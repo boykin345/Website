@@ -1,10 +1,10 @@
-import "../App.css";
+import "../App.scss";
 import Navbar from "../components/Navbar";
 import LinkedIn from "../assets/LinkedIn.png";
 import SoundCloud from "../assets/SoundCloud.png";
 import Spotify from "../assets/Spotify.png";
 import Steam from "../assets/Steam.png";
-import GitHub from "../assets/github.svg";
+import GitHub from "../assets/github.png";
 import Twitter from "../assets/Twitter.png";
 import Reddit from "../assets/Reddit.png";
 
