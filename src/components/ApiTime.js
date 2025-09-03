@@ -17,6 +17,8 @@ const ApiTime = () => {
       try {
         const response = await fetch(URL);
         const data = await response.json();
+        console.log(JSON.stringify(data));
+
         setTime(new Date(data.datetime));
       } catch (error) {
         console.error("Error fetching time:", error);
