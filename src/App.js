@@ -7,6 +7,7 @@ import Logo from "./assets/logo.svg";
 import Blog from "./pages/Blog";
 import Star from "./assets/Star.png";
 import Navbar from "./components/Navbar";
+import ApiTime from "./components/ApiTime";
 
 function About() {
   return (
@@ -20,6 +21,9 @@ function About() {
       <section className="about-container">
         <img src={Star} alt="main-photo-page" className="main-photo" />
         <h1 className="about-text">Mikhail Y. Kolyakin</h1>
+        <div className="about-text">
+          <ApiTime></ApiTime>
+        </div>
         <div>
           <p className="about-text">
             {" "}

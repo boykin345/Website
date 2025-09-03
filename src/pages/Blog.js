@@ -10,8 +10,8 @@ export function Blog() {
       <title>Blog</title>
       <section className="blog-container">
         <div className="post-row">
-          <span className="post-date">August 7, 2025</span>
-          <div className="post-info">
+          <span className="post-date about-text">August 7, 2025</span>
+          <div className="post-info about-text">
             <a href="/MyMacConfig" className="post-link">
               /My_Mac_Config
             </a>
@@ -19,8 +19,8 @@ export function Blog() {
           </div>
         </div>
         <div className="post-row">
-          <span className="post-date">August 2, 2025</span>
-          <div className="post-info">
+          <span className="post-date about-text">August 2, 2025</span>
+          <div className="post-info about-text">
             <a
               href="https://github.com/boykin345/Website"
               className="post-link"

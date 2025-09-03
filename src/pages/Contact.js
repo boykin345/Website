@@ -15,21 +15,18 @@ function Contact() {
       <div className="navbar-container">
         <Navbar />
       </div>
-      <div className="about-container">
-        <h1>Contact Page</h1>
-        <p>
-          Feel free to click on the icons to visit my profiles on various
-          platforms. If you want to reach me by email:
-        </p>
+      <section className="about-container-contact">
+        <h1 className="about-text">Email:</h1>
         <h2>
           <a
             href="mailto:M.Koliakin@me.com"
             style={{ color: "inherit", textDecoration: "none" }}
+            className="about-text"
           >
             M.Koliakin@me.com
           </a>
         </h2>
-      </div>
+      </section>
       <div className="projects-container">
         <a
           href="https://soundcloud.com/user-735227306"

@@ -153,10 +153,36 @@ h3 {
   h3 { font-size: 1.5rem; margin-bottom: 10px; }
 }
 
+.about-container-contact {
+  height: 250px;
+  max-width: 75vw;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: rgba(206, 184, 119, 0.1);
+  text-align: center;
+  font-family: Pixelscapes;
+  color: $primary-color;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  animation: fadeInUp 1s ease-out forwards;
+
+  h1, h2, h3 {
+    font-family: Pixelscapes;
+    color: $primary-color;
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  h1 { font-size: 2.5rem; margin-bottom: 20px; }
+  h2 { font-size: 1.8rem; margin-bottom: 15px; }
+  h3 { font-size: 1.5rem; margin-bottom: 10px; }
+}
+
 .about-text {
   max-width: 50vw;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  padding: 5px;
 }
 
 .About {
@@ -212,12 +238,12 @@ h3 {
     display: inline-block;
     flex: 1;
     width: 20rem;
-    text-align: right;
+    text-align: center;
     margin-right: 3rem;
   }
 
   .post-info {
-    text-align: right;
+    text-align: left;
     flex: 1;
   }
 
@@ -229,12 +255,6 @@ h3 {
     text-align: left;
 
     &:hover { text-decoration: underline; }
-  }
-
-  .post-author {
-    display: block;
-    font-size: 0.8rem;
-    color: $primary-color;
   }
 }
 
@@ -323,7 +343,6 @@ section {
   display: grid;
   place-items: center;
   align-content: center;
-  min-height: 63vh;
 }
 
 /* ---------------- ANIMATIONS ---------------- */
