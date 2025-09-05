@@ -29,7 +29,7 @@ const ApiTime = () => {
 
   return (
     <div>
-      <p>Time - {time.toLocaleTimeString()}</p>
+      <p>{time.toLocaleTimeString()}</p>
     </div>
   );
 };

@@ -7,6 +7,7 @@ import Steam from "../assets/Steam.png";
 import GitHub from "../assets/github.png";
 import Twitter from "../assets/Twitter.png";
 import Reddit from "../assets/Reddit.png";
+import ApiTime from "../components/ApiTime";
 
 function Contact() {
   return (
@@ -26,6 +27,10 @@ function Contact() {
             M.Koliakin@me.com
           </a>
         </h2>
+          <div className="about-text">
+              <h3>my local time</h3>
+              <ApiTime></ApiTime>
+          </div>
       </section>
       <div className="projects-container">
         <a

@@ -12,6 +12,8 @@ import ApiTime from "./components/ApiTime";
 function About() {
   return (
     <>
+        <meta name="viewport" content="initial-scale=1.0" />
+        <meta charSet="utf-8" />
       <title>About</title>
 
       <div className="navbar-container">
@@ -21,9 +23,6 @@ function About() {
       <section className="about-container">
         <img src={Star} alt="main-photo-page" className="main-photo" />
         <h1 className="about-text">Mikhail Y. Kolyakin</h1>
-        <div className="about-text">
-          <ApiTime></ApiTime>
-        </div>
         <div>
           <p className="about-text">
             {" "}
