@@ -7,7 +7,6 @@ import Logo from "./assets/logo.svg";
 import Blog from "./pages/Blog";
 import Star from "./assets/Star.png";
 import Navbar from "./components/Navbar";
-import ApiTime from "./components/ApiTime";
 
 function About() {
   return (
