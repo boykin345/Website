@@ -7,7 +7,5 @@ export default defineConfig({
             jsxRuntime: 'automatic'
         })
     ],
-    build: {
-        outDir: 'build'
-    }
+    base: './'
 })
