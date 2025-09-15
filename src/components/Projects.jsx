@@ -1,8 +1,9 @@
-import { AnimatedSection } from "../components/AnimatedSection";
+import { AnimatedSection } from "./AnimatedSection";
 import "../App.css";
 import { Helmet } from "react-helmet";
-import Navbar from "../components/Navbar";
+import Navbar from "./Navbar";
 import GitHub from "../assets/github.svg";
+import React from 'react';
 
 export default function Projects() {
   return (

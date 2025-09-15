@@ -1,5 +1,5 @@
 import "../App.scss";
-import Navbar from "../components/Navbar";
+import Navbar from "./Navbar";
 import LinkedIn from "../assets/LinkedIn.png";
 import SoundCloud from "../assets/SoundCloud.png";
 import Spotify from "../assets/Spotify.png";
@@ -7,7 +7,8 @@ import Steam from "../assets/Steam.png";
 import GitHub from "../assets/github.png";
 import Twitter from "../assets/Twitter.png";
 import Reddit from "../assets/Reddit.png";
-import ApiTime from "../components/ApiTime";
+import ApiTime from "./ApiTime"
+import React from 'react';
 
 function Contact() {
   return (
@@ -71,7 +72,7 @@ function Contact() {
           rel="noopener noreferrer"
           title="GitHub"
         >
-          <img src={GitHub} alt="GitHub" className="icon spin-ccw" />
+            <img src={GitHub} alt="GitHub" className="icon spin-ccw icon-large" />
         </a>
         <a
           href="https://x.com/BoyKin345"

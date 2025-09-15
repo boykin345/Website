@@ -1,5 +1,6 @@
-import "../../App.scss";
-import Navbar from "../../components/Navbar";
+import "../App.scss";
+import Navbar from "./Navbar";
+import React from 'react';
 
 function MyMacConfig() {
   return (
@@ -11,10 +12,10 @@ function MyMacConfig() {
       </div>
 
       <section className="blog-container">
-        <h1 className="blog-text">My Mac Config</h1>
+        <h1 className="about-text">My Mac Config</h1>
         <div className="code-container">
           <pre className="code-block">
-            <code>{`
+            {`
 brew update
 
 brew install \
@@ -58,7 +59,7 @@ brew install --cask \
 \n  docker \
 
 echo "All done!"
-`}</code>
+`}
           </pre>
         </div>
       </section>

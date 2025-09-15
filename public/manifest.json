@@ -1,6 +1,6 @@
 {
-  "short_name": "React Website",
-  "name": " React Personal Website",
+  "short_name": "Vite Website",
+  "name": "Vite + React Personal Website",
   "icons": [
     {
       "src": "favicon.ico",

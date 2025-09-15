@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import React from 'react';
 
 export function AnimatedSection({ children, className = "", ...props }) {
   useEffect(() => {

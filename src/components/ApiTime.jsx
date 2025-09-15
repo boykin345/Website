@@ -12,7 +12,7 @@ const ApiTime = () => {
   }, []);
 
   useEffect(() => {
-    const URL = "http://worldtimeapi.org/api/timezone/Asia/Yekaterinburg";
+    const URL = "https://worldtimeapi.org/api/timezone/Asia/Yekaterinburg";
     const fetchData = async () => {
       try {
         const response = await fetch(URL);
