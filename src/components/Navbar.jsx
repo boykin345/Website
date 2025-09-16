@@ -4,32 +4,27 @@ import React from 'react';
 export default function Navbar() {
     return (
         <nav className="nav">
-            {/* About / Home link */}
             <NavLink
                 to="/"
                 className={({isActive}) => (isActive ? "active logo" : "logo")}
             >
-                /About
+                About
+            </NavLink>
+            <NavLink
+                to="/Blog"
+                className={({isActive}) => (isActive ? "active logo" : "logo")}
+            >
+                Blog
             </NavLink>
 
-            <ul>
-                <li>
-                    <NavLink
-                        to="/Blog"
-                        className={({isActive}) => (isActive ? "active" : "")}
-                    >
-                        /Blog
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to="/Contact"
-                        className={({isActive}) => (isActive ? "active" : "")}
-                    >
-                        /Contact
-                    </NavLink>
-                </li>
-            </ul>
+            <NavLink
+                to="/Contact"
+                className={({isActive}) => (isActive ? "active logo" : "logo")}
+            >
+                Contact
+            </NavLink>
+
+
         </nav>
     );
 }

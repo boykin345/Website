@@ -24,7 +24,7 @@ const ApiTime = () => {
                 console.error("Error fetching time:", error);
             }
         };
-        
+
         fetchData();
     }, []);
 

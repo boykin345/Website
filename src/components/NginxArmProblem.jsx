@@ -22,6 +22,7 @@ function NginxARMProblem() {
                     <h3 className="about-text">just put it in your zsh:</h3>
                     <pre
                         className="code-block">ln -s /opt/homebrew/etc/nginx/nginx.conf /usr/local/etc/nginx/nginx.conf</pre>
+                    <h3 className="about-text">or just use brew stow</h3>
                 </div>
             </section>
         </>

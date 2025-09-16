@@ -75,25 +75,25 @@ h3 {
 
   .logo {
     font-family: Pixelscapes, serif;
-    font-weight: bold;
-    font-size: 2rem; // bigger About link
+    font-size: 1.5rem;
     color: $primary-color;
     text-decoration: none;
 
     &:visited {
-      color: $primary-color; // prevent violet
+      color: $primary-color;
     }
 
     &:hover {
+      border-bottom: 2px solid $primary-color;
       background-color: rgba(0, 0, 0, 0.3);
-      border-radius: 5px;
-      color: #ffea63;
+      border-radius: 0.25rem;
     }
 
     &.active {
       border-bottom: 2px solid $primary-color;
       background-color: rgba(0, 0, 0, 0.3);
-      border-radius: 5px;
+      border-radius: 0.25rem;
+      padding: 0.25rem 0.25rem;
     }
   }
 
