@@ -1,5 +1,5 @@
 import "./App.scss";
-import {Route, Routes} from "react-router-dom";
+import {HashRouter, Route, Routes} from "react-router-dom";
 import Contact from "./components/Contact";
 import MyMacConfig from "./components/MyMacConfig";
 import Coshka from "./assets/coshka.jpeg";
@@ -45,7 +45,7 @@ function About() {
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<About/>}/>
                 <Route path="/contact" element={<Contact/>}/>
@@ -54,7 +54,7 @@ function App() {
                 <Route path="/post/:postId" element={<Blog/>}/>
                 <Route path="/NginxARMProblem" element={<NginxARMProblem/>}/>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
