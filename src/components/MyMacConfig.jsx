@@ -3,17 +3,17 @@ import Navbar from "./Navbar";
 import React from 'react';
 
 function MyMacConfig() {
-  return (
-    <>
-      <title>My Mac Config</title>
+    return (
+        <>
+            <title>My Mac Config</title>
 
-      <div className="navbar-container">
-        <Navbar />
-      </div>
+            <div className="navbar-container">
+                <Navbar/>
+            </div>
 
-      <section className="blog-container">
-        <h1 className="about-text">My Mac Config</h1>
-        <div className="code-container">
+            <section className="blog-container">
+                <h1 className="about-text">My Mac Config</h1>
+                <div className="code-container">
           <pre className="code-block">
             {`
 brew update
@@ -61,10 +61,10 @@ brew install --cask \
 echo "All done!"
 `}
           </pre>
-        </div>
-      </section>
-    </>
-  );
+                </div>
+            </section>
+        </>
+    );
 }
 
 export default MyMacConfig;

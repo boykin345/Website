@@ -7,5 +7,10 @@ export default defineConfig({
             jsxRuntime: 'automatic'
         })
     ],
-    base: './'
+    base: './',
+    preview: {
+        port: 4173,
+        strictPort: true,
+        host: true
+    }
 })

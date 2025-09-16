@@ -39,17 +39,27 @@ h3 {
 }
 
 @keyframes spinClockwise {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes spinCounterClockwise {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(-360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 @media (prefers-reduced-motion) {
-  .hidden { transition: none; }
+  .hidden {
+    transition: none;
+  }
 }
 
 /* ---------------- NAV ---------------- */
@@ -62,11 +72,11 @@ h3 {
   position: sticky;
   top: 0;
   z-index: 1000;
-  font-family: Pixelscapes;
+  font-family: Pixelscapes, serif;
   font-size: 1.2rem;
 
   .logo {
-    font-family: Pixelscapes;
+    font-family: Pixelscapes, serif;
     font-weight: bold;
     font-size: 2rem; // bigger About link
     color: $primary-color;
@@ -135,7 +145,7 @@ h3 {
   padding: 20px 30px;
   background-color: rgba(206, 184, 119, 0.1);
   text-align: center;
-  font-family: Pixelscapes;
+  font-family: Pixelscapes, serif;
   color: $primary-color;
   border-radius: 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
@@ -143,14 +153,25 @@ h3 {
   animation: fadeInUp 1s ease-out forwards;
 
   h1, h2, h3 {
-    font-family: Pixelscapes;
+    font-family: Pixelscapes, serif;
     color: $primary-color;
     animation: fadeInUp 1s ease-out forwards;
   }
 
-  h1 { font-size: 2.5rem; margin-bottom: 20px; }
-  h2 { font-size: 1.8rem; margin-bottom: 15px; }
-  h3 { font-size: 1.5rem; margin-bottom: 10px; }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
 }
 
 .about-container-contact {
@@ -160,7 +181,7 @@ h3 {
   padding: 20px 30px;
   background-color: rgba(206, 184, 119, 0.1);
   text-align: center;
-  font-family: Pixelscapes;
+  font-family: Pixelscapes, serif;
   color: $primary-color;
   border-radius: 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
@@ -168,14 +189,25 @@ h3 {
   animation: fadeInUp 1s ease-out forwards;
 
   h1, h2, h3 {
-    font-family: Pixelscapes;
+    font-family: Pixelscapes, serif;
     color: $primary-color;
     animation: fadeInUp 1s ease-out forwards;
   }
 
-  h1 { font-size: 2.5rem; margin-bottom: 20px; }
-  h2 { font-size: 1.8rem; margin-bottom: 15px; }
-  h3 { font-size: 1.5rem; margin-bottom: 10px; }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
 }
 
 .about-text {
@@ -207,7 +239,7 @@ h3 {
   padding: 20px 30px;
   background-color: rgba(206, 184, 119, 0.1);
   text-align: center;
-  font-family: Pixelscapes;
+  font-family: Pixelscapes, serif;
   color: $primary-color;
   border-radius: 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
@@ -219,7 +251,7 @@ h3 {
   h1 {
     font-size: 2rem;
     margin-bottom: 20px;
-    font-family: Pixelscapes;
+    font-family: Pixelscapes, serif;
     color: $primary-color;
     animation: fadeInUp 1s ease-out forwards;
   }
@@ -254,7 +286,9 @@ h3 {
     font-size: 1.4rem;
     text-align: left;
 
-    &:hover { text-decoration: underline; }
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -274,7 +308,7 @@ h3 {
   padding: 20px 30px;
   background-color: rgba(206, 184, 119, 0.1);
   text-align: center;
-  font-family: Pixelscapes;
+  font-family: Pixelscapes, serif;
   color: $primary-color;
   border-radius: 15px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
@@ -291,7 +325,7 @@ h3 {
 
 .project {
   h2 {
-    font-family: Pixelscapes;
+    font-family: Pixelscapes, serif;
     color: $primary-color;
     animation: fadeInUp 1s ease-out forwards;
   }
@@ -347,30 +381,46 @@ section {
 
 /* ---------------- ANIMATIONS ---------------- */
 @keyframes slideUpFromFloor {
-  from { transform: translateY(300px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
 @keyframes appear {
-  from { opacity: 0; scale: 0.5; }
-  to { opacity: 1; scale: 1; }
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }
 
 @keyframes spin {
-  0% { transform: translateY(-50%) rotate(0deg); }
-  100% { transform: translateY(-50%) rotate(360deg); }
-}
-
-.block {
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  0% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-50%) rotate(360deg);
+  }
 }
 
 /* ---------------- MEDIA QUERIES ---------------- */

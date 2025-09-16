@@ -1,5 +1,5 @@
 import "./App.scss";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import Contact from "./components/Contact";
 import MyMacConfig from "./components/MyMacConfig";
 import Coshka from "./assets/coshka.jpeg";
@@ -11,36 +11,36 @@ import NginxARMProblem from "./components/NginxArmProblem";
 import React from 'react'
 
 function About() {
-  return (
-    <>
-        <meta name="viewport" content="initial-scale=1.0" />
-        <meta charSet="utf-8" />
-      <title>About</title>
+    return (
+        <>
+            <meta name="viewport" content="initial-scale=1.0"/>
+            <meta charSet="utf-8"/>
+            <title>About</title>
 
-      <div className="navbar-container">
-        <Navbar />
-      </div>
+            <div className="navbar-container">
+                <Navbar/>
+            </div>
 
-      <section className="about-container">
-        <img src={Star} alt="main-photo-page" className="main-photo" />
-        <h1 className="about-text">Mikhail Y. Kolyakin</h1>
-          <div>
-              <p className="about-text">
-                  {" "}
-                  <img
-                      src={Logo}
-                      alt="Logo"
-                      style={{width: "30px", height: "30px", verticalAlign: "middle"}}
-                  />{" "}
-                  Junior React web developer working in fintech. Interested in game
-                  development, especially of grand strategy games, as well as
-                  urbanistics and architecture.
-                  Also, a <a href={Coshka}>🐈</a> lives with me.
-              </p>
-          </div>
-      </section>
-    </>
-  );
+            <section className="about-container">
+                <img src={Star} alt="main-photo-page" className="main-photo"/>
+                <h1 className="about-text">Mikhail Y. Kolyakin</h1>
+                <div>
+                    <p className="about-text">
+                        {" "}
+                        <img
+                            src={Logo}
+                            alt="Logo"
+                            style={{width: "30px", height: "30px", verticalAlign: "middle"}}
+                        />{" "}
+                        Junior React web developer working in fintech. Interested in game
+                        development, especially of grand strategy games, as well as
+                        urbanistics and architecture.
+                        Also, a <a href={Coshka}>🐈</a> lives with me.
+                    </p>
+                </div>
+            </section>
+        </>
+    );
 }
 
 function App() {
@@ -48,14 +48,14 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<About/>}/>
-                <Route path="/contact" element={<Contact />} />
-        <Route path="/mymacconfig" element={<MyMacConfig />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/post/:postId" element={<Blog />} />
-        <Route path="/NginxARMProblem" element={<NginxARMProblem/>}/>
-      </Routes>
-    </BrowserRouter>
-  );
+                <Route path="/contact" element={<Contact/>}/>
+                <Route path="/mymacconfig" element={<MyMacConfig/>}/>
+                <Route path="/blog" element={<Blog/>}/>
+                <Route path="/post/:postId" element={<Blog/>}/>
+                <Route path="/NginxARMProblem" element={<NginxARMProblem/>}/>
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
