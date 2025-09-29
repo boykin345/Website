@@ -1,11 +1,19 @@
 $primary-color: #f5d9a6;
 
-body {
-  font-family: "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d;
   background-image: url("assets/AboutWallpaper.jpg");
   background-size: 20vh 20vw;
+  background-repeat: repeat; 
+  background-attachment: fixed;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 h1,
