@@ -1,8 +1,16 @@
 import "../../App.scss";
 import Navbar from "../Navbar";
-import React from "react";
+import React, { useEffect } from "react";
 
 export function Blog() {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
   return (
     <>
       <div className="navbar-container">

@@ -1,8 +1,15 @@
 import "../../App.scss";
 import Navbar from "../Navbar";
-import React from "react";
+import React, { useEffect } from "react";
 
 function NginxARMProblem() {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
   return (
     <>
       <title>Nginx ARM Problem</title>

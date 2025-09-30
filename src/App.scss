@@ -1,4 +1,5 @@
 $primary-color: #f5d9a6;
+$hover-color: #ffea63;
 
 html, body {
   height: 100%;
@@ -68,7 +69,6 @@ h3 {
   }
 }
 
-/* ---------------- NAV ---------------- */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -80,21 +80,19 @@ h3 {
   z-index: 1000;
   font-family: Pixelscapes, serif;
   font-size: 1.2rem;
-
   .logo {
     font-family: Pixelscapes, serif;
     font-size: 1.5rem;
     color: $primary-color;
     text-decoration: none;
+    transition: all .2s;
 
     &:visited {
       color: $primary-color;
     }
 
     &:hover {
-      border-bottom: 2px solid $primary-color;
-      background-color: rgba(0, 0, 0, 0.3);
-      border-radius: 0.25rem;
+      color: $hover-color; 
     }
 
     &.active {
@@ -126,7 +124,7 @@ h3 {
         &:hover {
           background-color: rgba(0, 0, 0, 0.3);
           border-radius: 5px;
-          color: #ffea63;
+          color: $hover-color;
         }
 
         &.active {
@@ -140,7 +138,6 @@ h3 {
 }
 
 
-/* ---------------- ABOUT ---------------- */
 .about {
   font-size: 2rem;
 }
@@ -238,7 +235,6 @@ h3 {
   color: #333;
 }
 
-/* ---------------- BLOG ---------------- */
 .blog-container {
   max-width: 75vw;
   margin: 40px auto;
@@ -291,9 +287,11 @@ h3 {
     color: $primary-color;
     font-size: 1.4rem;
     text-align: left;
+    transition: all .2s;
 
     &:hover {
       text-decoration: underline;
+      color: $hover-color;
     }
   }
 }
@@ -305,7 +303,6 @@ h3 {
   object-fit: cover;
 }
 
-/* ---------------- PROJECTS ---------------- */
 .projects-container,
 .project,
 .navbar-container {
@@ -344,7 +341,6 @@ h3 {
   justify-content: center;
 }
 
-/* ---------------- CODE BLOCK ---------------- */
 .code-block {
   background: #222;
   color: #ddd;
@@ -363,7 +359,6 @@ h3 {
   overflow-x: auto;
 }
 
-/* ---------------- ICONS ---------------- */
 .github-icon {
   width: 40px;
   height: 40px;
@@ -372,20 +367,17 @@ h3 {
   image-rendering: pixelated;
 }
 
-/* ---------------- FONTS ---------------- */
 @font-face {
   font-family: Pixelscapes;
   src: url("./assets/fonts/Pixelscapes.ttf");
 }
 
-/* ---------------- LAYOUT ---------------- */
 section {
   display: grid;
   place-items: center;
   align-content: center;
 }
 
-/* ---------------- ANIMATIONS ---------------- */
 @keyframes slideUpFromFloor {
   from {
     transform: translateY(300px);
@@ -429,7 +421,6 @@ section {
   }
 }
 
-/* ---------------- MEDIA QUERIES ---------------- */
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;

@@ -8,9 +8,16 @@ import GitHub from "../../assets/github.png";
 import Twitter from "../../assets/Twitter.png";
 import Reddit from "../../assets/Reddit.png";
 import ApiTime from "../ApiTime";
-import React from "react";
+import React, { useEffect } from "react";
 
 function Contact() {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
   return (
     <>
       <title>Contact</title>

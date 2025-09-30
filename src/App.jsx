@@ -8,9 +8,16 @@ import Blog from "./components/pages/Blog";
 import Star from "./assets/Star.png";
 import Navbar from "./components/Navbar";
 import NginxARMProblem from "./components/pages/NginxArmProblem";
-import React from "react";
+import React, { useEffect } from "react";
 
 function About() {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
   return (
     <>
       <meta name="viewport" content="initial-scale=1.0" />
